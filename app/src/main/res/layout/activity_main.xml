@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="10sp"
+    android:padding="10sp"
+    android:background="@mipmap/stars"
     tools:context=".MainActivity">
 
     <!--<LinearLayout
@@ -35,8 +36,8 @@
     <ImageView
         android:id="@+id/mainLogo"
         android:layout_width="match_parent"
-        android:layout_height="40sp"
-        app:srcCompat="@mipmap/star_wars_codex_logo" />
+        android:layout_height="100sp"
+        app:srcCompat="@mipmap/star_wars_codex_logo_vertical" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/navigationBarFragment"
