@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5sp">
+
+
+    <ImageView
+        android:id="@+id/imageViewItemPlanete"
+        android:layout_margin="10sp"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/photo_profil" />
+    <LinearLayout
+        android:id="@+id/layoutSeparatorPlanete"
+        android:layout_width="2sp"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewItemPlaneteName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="5sp"
+            android:textColor="#233D67"
+            android:textStyle="bold"
+            android:text="Nom de la planète" />
+
+            <TextView
+                android:id="@+id/textViewItemPlaneteRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_margin="5sp"
+                android:text="Région" />
+
+        <TextView
+            android:id="@+id/textViewItemPlaneteType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_margin="5sp"
+            android:text="Type de planète" />
+
+    </LinearLayout>
+</LinearLayout>

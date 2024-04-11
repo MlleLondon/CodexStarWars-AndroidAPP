@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@mipmap/stars"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_margin="14sp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_header"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="300sp"
+            android:layout_height="150sp"
+            android:src="@mipmap/star_wars_codex_logo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="20sp">
+
+            <ImageView
+                android:id="@+id/imagePlanete"
+                android:layout_width="100sp"
+                android:layout_height="150sp"
+                android:src="@drawable/planete" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagePlanete"
+                android:textSize="25sp"
+                android:textColor="#f8eb0d "
+                android:text="Planètes"
+                android:fontFamily="@drawable/Starjout"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageVaisseau"
+                android:layout_width="100sp"
+                android:layout_height="150sp"
+                android:src="@drawable/vaisseau"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageVaisseau"
+                android:textSize="25sp"
+                android:textColor="#f8eb0d "
+                android:text="Vaisseaux"
+                android:fontFamily="@drawable/Starjout"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="20sp">
+
+            <ImageView
+                android:id="@+id/imageEspece"
+                android:layout_width="100sp"
+                android:layout_height="150sp"
+                android:src="@drawable/espece" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageEspece"
+                android:textSize="25sp"
+                android:textColor="#f8eb0d "
+                android:text="Espèces"
+                android:fontFamily="@drawable/Starjout"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imagePerso"
+                android:layout_width="100sp"
+                android:layout_height="150sp"
+                android:src="@drawable/personnage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagePerso"
+                android:textSize="25sp"
+                android:textColor="#f8eb0d "
+                android:text="Personnages"
+                android:fontFamily="@drawable/Starjout"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

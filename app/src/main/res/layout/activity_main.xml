@@ -10,6 +10,11 @@
     android:background="@mipmap/stars"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,6 +43,14 @@
         android:layout_width="match_parent"
         android:layout_height="100sp"
         app:srcCompat="@mipmap/star_wars_codex_logo_vertical" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14sp"
+        android:queryHint="@string/rechercher"
+        android:background="@drawable/border"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/navigationBarFragment"
