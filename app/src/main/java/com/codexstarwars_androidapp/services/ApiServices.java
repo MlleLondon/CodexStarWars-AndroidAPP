@@ -21,7 +21,8 @@ import org.json.JSONObject;
 
 public class ApiServices {
 
-    private static String URL_API_SEARCH = "http://192.168.76.45/Bac+3/StarWars - APIREST/CodexStarWars-RestAPI/server/index.php?resource=planete&name=";
+    // private static String URL_API_SEARCH = "http://192.168.76.45/CodexStarWars-RestAPI/server/index.php?resource=planete&name=";
+    private static String URL_API_SEARCH = "https://codexstarwars.000webhostapp.com/index.php?resource=planete&name=";
 
 
     public static void searchRequest(Context context, String search, SearchObserver listener) {

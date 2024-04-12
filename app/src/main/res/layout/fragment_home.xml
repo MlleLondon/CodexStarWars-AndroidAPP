@@ -51,7 +51,7 @@
                 android:textSize="25sp"
                 android:textColor="#f8eb0d "
                 android:text="Planètes"
-                android:fontFamily="@drawable/Starjout"/>
+                android:fontFamily="@font/starjout"/>
         </LinearLayout>
 
 
@@ -74,7 +74,7 @@
                 android:textSize="25sp"
                 android:textColor="#f8eb0d "
                 android:text="Vaisseaux"
-                android:fontFamily="@drawable/Starjout"/>
+                android:fontFamily="@font/starjout"/>
         </LinearLayout>
 
 
@@ -107,7 +107,7 @@
                 android:textSize="25sp"
                 android:textColor="#f8eb0d "
                 android:text="Espèces"
-                android:fontFamily="@drawable/Starjout"/>
+                android:fontFamily="@font/starjout"/>
         </LinearLayout>
 
 
@@ -130,7 +130,7 @@
                 android:textSize="25sp"
                 android:textColor="#f8eb0d "
                 android:text="Personnages"
-                android:fontFamily="@drawable/Starjout"/>
+                android:fontFamily="@font/starjout"/>
         </LinearLayout>
 
 
