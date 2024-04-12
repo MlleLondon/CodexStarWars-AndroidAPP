@@ -22,6 +22,10 @@ public class VaisseauAdapter extends BaseAdapter {
         this.context = context;
     }
 
+    public void setVaisseaux(ArrayList<Vaisseau> vaisseaux) {
+        this.vaisseaux = vaisseaux;
+    }
+
     @Override
     public int getCount() {
         return this.vaisseaux.size();
@@ -42,21 +46,15 @@ public class VaisseauAdapter extends BaseAdapter {
         if (view == null) {
             view = LayoutInflater.from(context).inflate(R.layout.item_vaisseau, viewGroup, false);
         }
-        TextView textViewVaisseauName = view.findViewById(R.id.textViewVaisseauName);
-        TextView textViewVaisseauDescription = view.findViewById(R.id.textViewVaisseauDescription);
-        TextView textViewVaisseauLongueur = view.findViewById(R.id.textViewVaisseauLongueur);
-        TextView textViewVaisseauVitesse = view.findViewById(R.id.textViewVaisseauVitesse);
-        TextView textViewVaisseauEquipage = view.findViewById(R.id.textViewVaisseauEquipage);
-        TextView textViewVaisseauMoteur = view.findViewById(R.id.textViewVaisseauMoteur);
-        ImageView imageViewVaisseau = view.findViewById(R.id.imageViewVaisseau);
+        TextView textViewItemVaisseauName = view.findViewById(R.id.textViewItemVaisseauName);
+        TextView textViewItemVaisseauTaille = view.findViewById(R.id.textViewItemVaisseauTaille);
+        TextView textViewItemVaisseauEquipage = view.findViewById(R.id.textViewItemVaisseauEquipage);
+        ImageView imageViewItemVaisseau = view.findViewById(R.id.imageViewItemVaisseau);
 
-        textViewVaisseauName.setText(vaisseaux.get(i).getNom());
-        textViewVaisseauDescription.setText(vaisseaux.get(i).getDescription());
-        textViewVaisseauLongueur.setText(vaisseaux.get(i).getLongueur());
-        textViewVaisseauVitesse.setText(vaisseaux.get(i).getVitesse());
-        textViewVaisseauEquipage.setText(vaisseaux.get(i).getEquipage());
-        textViewVaisseauMoteur.setText(vaisseaux.get(i).getMoteur());
-        ApiVaisseauxService.loadVaisseauImage(context, vaisseaux.get(i).getImage(), imageViewVaisseau);
+        textViewItemVaisseauName.setText(vaisseaux.get(i).getNom());
+        textViewItemVaisseauTaille.setText(vaisseaux.get(i).getLongueur());
+        textViewItemVaisseauEquipage.setText(vaisseaux.get(i).getEquipage());
+        ApiVaisseauxService.loadVaisseauImage(context, vaisseaux.get(i).getImage(), imageViewItemVaisseau);
 
         return view;
     }
