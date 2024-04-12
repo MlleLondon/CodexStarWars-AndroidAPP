@@ -42,7 +42,7 @@
                 android:id="@+id/imagePlanete"
                 android:layout_width="100sp"
                 android:layout_height="150sp"
-                android:src="@drawable/planete" />
+                android:src="@drawable/star_wars_planetes_logo" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
                 android:id="@+id/imageVaisseau"
                 android:layout_width="100sp"
                 android:layout_height="150sp"
-                android:src="@drawable/vaisseau"/>
+                android:src="@drawable/star_wars_vaisseaux_logo"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -98,7 +98,7 @@
                 android:id="@+id/imageEspece"
                 android:layout_width="100sp"
                 android:layout_height="150sp"
-                android:src="@drawable/espece" />
+                android:src="@drawable/star_wars_especes_logo" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -121,7 +121,7 @@
                 android:id="@+id/imagePerso"
                 android:layout_width="100sp"
                 android:layout_height="150sp"
-                android:src="@drawable/personnage"/>
+                android:src="@drawable/star_wars_personnages_logo" />
 
             <TextView
                 android:layout_width="wrap_content"
