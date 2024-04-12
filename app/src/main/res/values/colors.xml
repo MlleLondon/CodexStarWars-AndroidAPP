@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="beige">#DED9CE</color>
     <color name="jaune">#f8eb0d</color>
+    <color name="bleu_fonce">#233D67</color>
 </resources>
