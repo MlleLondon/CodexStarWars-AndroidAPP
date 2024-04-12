@@ -72,7 +72,7 @@
                 android:layout_marginTop="5sp">
 
                 <TextView
-                    android:id="@+id/textViewPlaneteLongueur"
+                    android:id="@+id/textViewVaisseauLongueur"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="textEnd"
@@ -80,7 +80,7 @@
                     android:text="1155 m" />
 
                 <TextView
-                    android:id="@+id/textViewPlaneteVitesse"
+                    android:id="@+id/textViewVaisseauVitesse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="textStart"
@@ -96,7 +96,7 @@
                 android:layout_marginTop="5sp">
 
                 <TextView
-                    android:id="@+id/textViewPlaneteMoteur"
+                    android:id="@+id/textViewVaisseauMoteur"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="textEnd"
@@ -104,7 +104,7 @@
                     android:text="Propulseurs ioniques" />
 
                 <TextView
-                    android:id="@+id/textViewPlaneteEquipage"
+                    android:id="@+id/textViewVaisseauEquipage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="textStart"
