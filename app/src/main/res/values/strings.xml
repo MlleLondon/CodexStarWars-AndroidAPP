@@ -5,4 +5,6 @@
     <string name="rechercher">Rechercher...</string>
     <string name="valider">Valider</string>
     <string name="photo_profil">Photo de profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
