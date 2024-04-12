@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements SearchObserver, S
 
     private PlaneteFragment planeteFragment;
     private SearchFragment searchFragment;
+
     private SearchFragmentPerso searchFragmentPerso;
 
     private PersonnageFragment personnageFragment;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements SearchObserver, S
 
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.frameLayout, searchFragment)
+                    .add(R.id.frameLayout, searchFragmentPerso)
                     .add(R.id.frameLayout, planeteFragment)
                     .add(R.id.frameLayout, personnageFragment)
                     .hide(planeteFragment)

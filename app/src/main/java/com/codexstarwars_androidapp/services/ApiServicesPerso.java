@@ -38,7 +38,7 @@ public class ApiServicesPerso {
                                 JSONObject object = jsonArray.getJSONObject(i);
                                 Personnage personnage = new Personnage(
                                         object.getInt("id"),
-                                        object.getString("bom"),
+                                        object.getString("nom"),
                                         object.getString("description"),
                                         object.getString("alias"),
                                         object.getString("dateNaissance"),
