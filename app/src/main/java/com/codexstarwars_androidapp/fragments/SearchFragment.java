@@ -15,6 +15,8 @@ import androidx.fragment.app.Fragment;
 import java.util.ArrayList;
 
 
+import com.codexstarwars_androidapp.models.Personnage;
+import com.codexstarwars_androidapp.models.PersonnageAdapter;
 import com.codexstarwars_androidapp.models.Planete;
 import com.codexstarwars_androidapp.models.PlaneteAdapter;
 import com.codexstarwars_androidapp.services.ApiServices;

@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageViewItemPlanete"
+        android:id="@+id/imageViewItemPersonnage"
         android:layout_margin="10sp"
         android:layout_width="0sp"
         android:layout_height="match_parent"
@@ -16,7 +16,7 @@
         android:src="@mipmap/ic_launcher"
         android:contentDescription="@string/photo_profil" />
     <LinearLayout
-        android:id="@+id/layoutSeparatorPlanete"
+        android:id="@+id/layoutSeparatorPersonnage"
         android:layout_width="2sp"
         android:layout_height="match_parent"
         android:layout_margin="5sp"
@@ -31,30 +31,30 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewItemPlaneteName"
+            android:id="@+id/textViewItemPersonnageName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:layout_margin="5sp"
             android:textColor="#233D67"
             android:textStyle="bold"
-            android:text="Nom de la planète" />
-
-            <TextView
-                android:id="@+id/textViewItemPlaneteRegion"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:layout_margin="5sp"
-                android:text="Région" />
+            android:text="Nom du personnage" />
 
         <TextView
-            android:id="@+id/textViewItemPlaneteType"
+            android:id="@+id/textViewItemPersonnageLieuNaissance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:layout_margin="5sp"
-            android:text="Type de planète" />
+            android:text="Lieu de naissance" />
+
+        <TextView
+            android:id="@+id/textViewItemPersonnageEspece"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_margin="5sp"
+            android:text="Espèce" />
 
     </LinearLayout>
 </LinearLayout>
