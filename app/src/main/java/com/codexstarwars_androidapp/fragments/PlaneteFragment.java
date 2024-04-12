@@ -46,7 +46,6 @@ public class PlaneteFragment extends Fragment {
     }
 
     public void onSelectPlanete(Planete planete) {
-
         //Nom de la planète
         textViewName.setText(planete.getName());
 

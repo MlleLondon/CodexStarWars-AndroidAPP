@@ -13,19 +13,20 @@ import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.codexstarwars_androidapp.models.Personnage;
 import com.codexstarwars_androidapp.models.Planete;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ApiServices {
+public class ApiServicesPerso {
 
     // private static String URL_API_SEARCH = "http://192.168.76.45/CodexStarWars-RestAPI/server/index.php?resource=planete&name=";
-    private static String URL_API_SEARCH = "https://codexstarwars.000webhostapp.com/index.php?resource=planete&name=";
+    private static String URL_API_SEARCH = "https://codexstarwars.000webhostapp.com/index.php?resource=personnage&name=";
 
 
-    public static void searchRequest(Context context, String search, SearchObserver listener) {
+    public static void searchRequest(Context context, String search, SearchObserverPerso listener) {
         RequestQueue queue = Volley.newRequestQueue(context);
         StringRequest request = new StringRequest(URL_API_SEARCH + search,
                 new Response.Listener<String>() {
@@ -35,19 +36,20 @@ public class ApiServices {
                             JSONArray jsonArray = new JSONArray(response);
                             for (int i = 0; i < jsonArray.length(); i++) {
                                 JSONObject object = jsonArray.getJSONObject(i);
-                                Planete planete = new Planete(
+                                Personnage personnage = new Personnage(
                                         object.getInt("id"),
-                                        object.getInt("nbLunes"),
-                                        object.getString("nom"),
+                                        object.getString("bom"),
                                         object.getString("description"),
-                                        object.getString("region"),
-                                        object.getString("systeme"),
-                                        object.getString("type"),
-                                        object.getString("diametre"),
-                                        object.getString("population"),
+                                        object.getString("alias"),
+                                        object.getString("dateNaissance"),
+                                        object.getString("lieuNaissance"),
+                                        object.getString("dateMort"),
+                                        object.getString("lieuMort"),
+                                        object.getString("espece"),
+                                        object.getString("genre"),
                                         object.getString("image"));
                                 // Ajoutez d'autres propriétés de la planète ici
-                                listener.onReceivePlaneteInfo(planete);
+                                listener.onReceivePersonnageInfo(personnage);
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
