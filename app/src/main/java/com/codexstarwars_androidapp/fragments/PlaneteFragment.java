@@ -47,14 +47,31 @@ public class PlaneteFragment extends Fragment {
 
     public void onSelectPlanete(Planete planete) {
 
+        //Nom de la planète
         textViewName.setText(planete.getName());
-        textViewPlaneteRegion.setText("Région : " + planete.getRegion());
-        textViewPlaneteType.setText("Type : " + planete.getType());
-        textViewPlaneteSysteme.setText("Système : " + planete.getSysteme());
-        textViewPlaneteLunes.setText("Nombres de lune(s) : " + planete.getNbLunes());
-        textViewPlaneteDesc.setText("Description : " + planete.getDescription());
-        textViewPlaneteDiametre.setText("Diamètre : " + planete.getDiametre());
-        textViewPlanetePopulation.setText("Population : " + planete.getPopulation());
+
+        //Région de la planète
+        textViewPlaneteRegion.setText(planete.getRegion());
+
+        //Type de la planete
+        textViewPlaneteType.setText( (planete.getType()=="Inconnu"?"":planete.getType()));
+
+        //Système de la planete
+        textViewPlaneteSysteme.setText(planete.getSysteme());
+
+        //Nombre de lunes de la planète
+        textViewPlaneteLunes.setText(""+planete.getNbLunes());
+
+        //Description de la planète
+        textViewPlaneteDesc.setText(planete.getDescription());
+
+        //Diamètre
+        textViewPlaneteDiametre.setText( (planete.getDiametre()=="Inconnu"?"":"∅ : ")+planete.getDiametre());
+
+        //Population
+        textViewPlanetePopulation.setText(planete.getPopulation());
+
+        ApiServices.loadPlaneteImage(getContext(), planete.getImage(), imageView);
 
     }
 }
