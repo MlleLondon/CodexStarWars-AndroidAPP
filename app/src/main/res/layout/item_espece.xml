@@ -8,55 +8,55 @@
 
 
     <ImageView
-        android:id="@+id/imageViewItemPlanete"
-        android:layout_width="106dp"
-        android:layout_height="100sp"
+        android:id="@+id/imageViewItemEspece"
+        android:layout_margin="10sp"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:layout_gravity="center"
-        android:layout_marginStart="10sp"
-        android:contentDescription="@string/photo_profil"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/photo_profil" />
     <LinearLayout
-        android:background="@color/black"
-        android:id="@+id/layoutSeparatorPlanete"
+        android:id="@+id/layoutSeparatorEspece"
         android:layout_width="2sp"
         android:layout_height="match_parent"
         android:layout_margin="5sp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/black">
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
         android:gravity="center"
         android:layout_margin="10sp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textViewItemPlaneteName"
+            android:id="@+id/textViewItemEspeceName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:layout_margin="5sp"
             android:textColor="#233D67"
             android:textStyle="bold"
-            android:text="Nom de la planète" />
+            android:text="Nom de l'espece" />
 
             <TextView
-                android:id="@+id/textViewItemPlaneteRegion"
+                android:id="@+id/textViewItemEspecePlanete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:textColor="@color/black"
                 android:layout_margin="5sp"
-                android:text="Région" />
+                android:text="Planète" />
 
         <TextView
-            android:id="@+id/textViewItemPlaneteType"
+            android:id="@+id/textViewItemEspeceTaille"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:textColor="@color/black"
             android:layout_margin="5sp"
-            android:text="Type de planète" />
+            android:text="Taille" />
 
     </LinearLayout>
 </LinearLayout>

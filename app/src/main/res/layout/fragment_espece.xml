@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@mipmap/stars"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_margin="14sp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_header"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="300sp"
+            android:layout_height="150sp"
+            android:src="@mipmap/star_wars_codex_logo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="14sp"
+        android:layout_marginRight="14sp"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewEspece"
+                    android:layout_width="80sp"
+                    android:layout_height="100sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10sp"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewEspeceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom de l'espèce"
+                android:textAlignment="center"
+                android:textColor="#233D67"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10sp">
+
+                <TextView
+                    android:id="@+id/textViewEspeceClassification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Classification"
+                    android:textAlignment="center"
+                    android:textColor="#233D67"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10sp">
+
+                <TextView
+                    android:id="@+id/textViewEspeceTaille"
+                    android:text="Taille"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="center"
+                    android:textColor="#233D67"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/textViewEspecePlanete"
+                    android:text="Planete"
+                    android:layout_marginLeft="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="center"
+                    android:textColor="#233D67"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewEspeceLangage"
+                    android:text="Langage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="center"
+                    android:textColor="#233D67"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10sp"
+                android:background="@color/black"
+                android:id="@+id/layoutSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textViewEspeceDesc"
+                    android:text="Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAlignment="center"
+                    android:textColor="#233D67"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/layoutSeparator2"
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:layout_margin="10sp"
+                android:background="@color/black"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
