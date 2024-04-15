@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.codexstarwars_androidapp.fragments.HomeFragment;
 import com.codexstarwars_androidapp.fragments.PersonnageFragment;
 import com.codexstarwars_androidapp.fragments.PlaneteFragment;
 import com.codexstarwars_androidapp.fragments.SearchFragment;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements SearchObserver, S
     private PersonnageFragment personnageFragment;
     private SearchFragmentVaisseaux searchFragmentVaisseaux;
     private VaisseauFragment vaisseauFragment;
+    private HomeFragment homeFragment;
   
     private boolean isMobile() {
         return findViewById(R.id.frameLayout)!=null;
@@ -56,6 +58,8 @@ public class MainActivity extends AppCompatActivity implements SearchObserver, S
                     .hide(planeteFragment)
                     .hide(personnageFragment)
                     .hide(vaisseauFragment)
+                    .hide(searchFragmentPerso)
+                    .hide(searchFragment)
                     .commit();
     }
 

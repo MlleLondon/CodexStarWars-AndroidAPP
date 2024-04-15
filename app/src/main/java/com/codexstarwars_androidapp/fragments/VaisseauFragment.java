@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.codexstarwars_androidapp.R;
 import com.codexstarwars_androidapp.models.Vaisseau;
+import com.codexstarwars_androidapp.services.ApiVaisseauxService;
 
 public class VaisseauFragment extends Fragment {
     private ImageView imageViewVaisseau;
@@ -41,5 +42,7 @@ public class VaisseauFragment extends Fragment {
         textViewVaisseauVitesse.setText(vaisseau.getVitesse());
         textViewVaisseauEquipage.setText(vaisseau.getEquipage());
         textViewVaisseauMoteur.setText(vaisseau.getMoteur());
+
+        ApiVaisseauxService.loadVaisseauImage(getContext(), vaisseau.getImage(), imageViewVaisseau);
     }
 }
